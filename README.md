@@ -4,6 +4,8 @@
 
 Este projeto foi desenvolvido durante o curso **[Avançando no HTML e CSS](https://app.rocketseat.com.br/classroom/avancando-no-html-e-css-2/group/projeto-portal-de-noticias/lesson/iniciando-o-projeto-6)** da [Rocketseat](https://rocketseat.com.br), com o objetivo de aplicar conceitos avançados de HTML e CSS, especialmente o uso do **CSS Grid Layout**.
 
+<a href="https://emersonromana.github.io/tech-news/">Link para a página TECH NEWS</a>  (OBS: Ainda não está totalmente responsivo)
+
 ## 🧠 Conteúdo do Projeto
 
 - HTML semântico
