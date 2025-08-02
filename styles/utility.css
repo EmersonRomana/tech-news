@@ -1,0 +1,36 @@
+/* --------------- Utilitario first ----------------- */
+.grid {
+    display: grid;
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
+}
+
+.grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.text-2xl {
+    font: var(--heading1);
+}
+
+.text-xl {
+    font: var(--heading2);
+}
+
+.text-lg {
+    font: var(--heading3);
+}
+
+.text-sm {
+    font: var(--span);
+}
