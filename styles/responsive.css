@@ -1,0 +1,220 @@
+/* Estilos para telas menores (mobile) */
+@media (max-width: 767px) {
+    .container {
+        padding-inline: 16px;
+    }
+
+    :root {
+        --heading1: 800 18px/135% var(--font-family);
+        --heading2: 800 14px/140% var(--font-family);
+        --heading3: 800 12px/140% var(--font-family);
+        --span: 600 11px/145% var(--font-family);
+        --paragraph: 400 11px/160% var(--font-family);
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+        margin-block: 16px;
+        grid-template-areas: 
+        "featured"
+        "weekly"
+        "ai"
+        "aside";
+    }
+
+    /* Header responsivo */
+    #primary {
+        padding-block: 12px;
+    }
+
+    #primary .grid-flow-col {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        text-align: center;
+    }
+
+    #primary div:nth-child(2) {
+        margin-inline: 0;
+        order: 1;
+    }
+
+    #primary div:nth-child(1) {
+        order: 2;
+        justify-self: start;
+    }
+
+    #primary div:nth-child(3) {
+        order: 3;
+        justify-self: end;
+    }
+
+    #secundary {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding-block: 12px;
+        justify-content: center;
+    }
+
+    #secundary a {
+        font-size: 11px;
+        padding: 4px 8px;
+        white-space: nowrap;
+    }
+
+    /* Featured section responsivo */
+    #featured.grid-flow-col {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+    }
+
+    #featured .grid-cols-2 {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* Weekly section responsivo */
+    #weekly > div {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    #weekly img {
+        height: 140px;
+    }
+
+    /* AI section responsivo */
+    #ai .grid-flow-col {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    #ai img {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        justify-self: center;
+    }
+
+    /* Aside responsivo */
+    #more .grid-flow-col {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        text-align: center;
+    }
+
+    #more img {
+        width: 50px;
+        justify-self: center;
+    }
+
+    /* Headers de seções responsivos */
+    section header.grid-flow-col {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        text-align: center;
+    }
+
+    section header a {
+        justify-self: center;
+    }
+
+    /* Tags menores */
+    .container-tag {
+        font-size: 8px;
+        padding: 2px 6px;
+    }
+
+    /* Gaps menores */
+    .gap-32 {
+        gap: 16px;
+    }
+
+    .gap-16 {
+        gap: 12px;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding-inline: 24px;
+    }
+
+    :root {
+        --heading1: 800 20px/135% var(--font-family);
+        --heading2: 800 15px/140% var(--font-family);
+        --heading3: 800 13px/140% var(--font-family);
+        --span: 600 12px/145% var(--font-family);
+        --paragraph: 400 12px/160% var(--font-family);
+    }
+
+    main {
+        grid-template-columns: 1fr 0.7fr;
+        row-gap: 48px;
+        grid-template-areas: 
+        "featured featured"
+        "weekly weekly"
+        "ai aside";
+    }
+
+    /* Header tablet */
+    #primary {
+        padding-block: 16px;
+    }
+
+    #secundary {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    /* Featured section tablet */
+    #featured .grid-cols-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Weekly section tablet */
+    #weekly > div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #weekly img {
+        height: 150px;
+    }
+
+    /* AI section tablet */
+    #ai img {
+        width: 120px;
+    }
+
+    /* Aside tablet */
+    #more img {
+        width: 56px;
+    }
+
+    /* Gaps tablet */
+    .gap-32 {
+        gap: 24px;
+    }
+}
+
+/* Estilos para telas grandes (desktop) */
+@media (min-width: 1024px) {
+    #weekly > div {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+
+    /* Melhorar espaçamento em desktop */
+    main {
+        row-gap: 80px;
+    }
+}
+
+
