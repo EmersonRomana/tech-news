@@ -51,16 +51,19 @@
     }
 
     #secundary {
+        display: flex;
         flex-wrap: wrap;
         gap: 8px;
         padding-block: 12px;
         justify-content: center;
+        overflow: hidden;
     }
 
     #secundary a {
-        font-size: 11px;
-        padding: 4px 8px;
+        font-size: 10px;
+        padding: 4px 6px;
         white-space: nowrap;
+        flex-shrink: 0;
     }
 
     /* Featured section responsivo */
@@ -161,14 +164,28 @@
 
     /* Headers de seções responsivos */
     section header.grid-flow-col {
-        grid-auto-flow: row;
-        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         gap: 8px;
-        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    section header h3 {
+        flex: 1;
+        min-width: 0;
     }
 
     section header a {
-        justify-self: center;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 10px;
+        flex-shrink: 0;
+    }
+
+    section header a strong {
+        font-size: 10px;
     }
 
     /* Tags menores */
