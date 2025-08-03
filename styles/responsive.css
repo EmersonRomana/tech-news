@@ -74,14 +74,25 @@
         gap: 16px;
     }
 
+    /* Garantindo que todas as imagens do featured tenham 100% da largura */
+    #featured img {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+        object-fit: cover;
+    }
+
     /* Weekly section responsivo */
     #weekly > div {
         grid-template-columns: 1fr;
         gap: 16px;
     }
 
+    /* Garantindo que todas as imagens do weekly tenham 100% da largura */
     #weekly img {
+        width: 100%;
         height: 140px;
+        object-fit: cover;
     }
 
     /* AI section responsivo */
@@ -91,24 +102,61 @@
         gap: 12px;
     }
 
+    /* Garantindo que todas as imagens do AI tenham 100% da largura */
     #ai img {
         width: 100%;
         height: auto;
-        max-width: 200px;
+        min-height: 180px;
+        max-height: 220px;
+        object-fit: cover;
         justify-self: center;
     }
 
-    /* Aside responsivo */
+    /* Aside responsivo - melhorando layout */
+    aside {
+        display: grid;
+        gap: 24px;
+    }
+
+    /* Ads com 100% da largura */
+    #ads img {
+        width: 100%;
+        height: auto;
+        min-height: 120px;
+        object-fit: cover;
+    }
+
+    /* Seção "more" com layout de duas colunas para melhor aproveitamento do espaço */
+    #more > div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
     #more .grid-flow-col {
         grid-auto-flow: row;
         grid-template-columns: 1fr;
         gap: 8px;
-        text-align: center;
+        text-align: left;
     }
 
+    /* Imagens da seção "more" com tamanho adequado para duas colunas */
     #more img {
-        width: 50px;
-        justify-self: center;
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    /* Ajustando texto da seção "more" para duas colunas */
+    #more h3 {
+        font-size: 11px;
+        line-height: 1.3;
+        margin-top: 6px;
+    }
+
+    #more .container-tag {
+        font-size: 7px;
+        padding: 2px 4px;
     }
 
     /* Headers de seções responsivos */
@@ -216,5 +264,3 @@
         row-gap: 80px;
     }
 }
-
-
